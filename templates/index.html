@@ -5,18 +5,21 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link href="//maxcdn.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css" rel="stylesheet" id="bootstrap-css">
-<script src="//maxcdn.bootstrapcdn.com/bootstrap/4.1.1/js/bootstrap.min.js"></script>
-<script src="//cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script src="//maxcdn.bootstrapcdn.com/bootstrap/4.1.1/js/bootstrap.min.js"></script>
+    <script src="//cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
     <link rel="stylesheet" href="{{url_for('static', filename='styles.css')}}">
     <title>Klasifikasi Grade Susu</title>
 </head>
 <body>
 <section class="contact" id="contact">
     <div class="container">
-        <div class="heading text-center wow fadeInUp" style="visibility: visible; animation-name: fadeInUp;">
+        <div class="heading text-center wow fadeInUp p-3" style="visibility: visible; animation-name: fadeInUp;">
             <h2>
                 <span>Klasifikasi</span>
                 Grade Susu</h2>
+        </div>
+        <div class="contact-image pb-3">
+            <img src="{{url_for('static', filename='milk.png')}}" style="width: 60px; height: 60px;" alt="Susu"/>
         </div>
         <div class="main wow fadeInUp" style="visibility: visible; animation-name: fadeInUp;">
             <div class="row">
@@ -55,7 +58,7 @@
 </section>
 <footer>
     <div class="contact-image">
-        <img src="{{url_for('static', filename='cow.png')}}" alt="Sapi"/>
+        <img src="{{url_for('static', filename='cow.png')}}" alt="Susu"/>
     </div>
 </footer>
 </body>

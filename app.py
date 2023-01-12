@@ -15,7 +15,7 @@ def predict():
     float_features = [float(x) for x in request.form.values()]
     feature = [np.array(float_features)]
     prediction = model.predict(feature)
-    return render_template("index.html", prediction_text = "Berdasarkan parameter yang ada masukkan Grade dari Susu adalah {}".format(prediction))
+    return render_template("index.html", prediction_text = "Berdasarkan parameter yang dimasukkan, Grade dari Susu adalah {}".format(prediction))
 
 if __name__ == "__main__":
     app.run(debug=True)
